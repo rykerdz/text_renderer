@@ -230,6 +230,7 @@ def import_module_from_file(full_path_to_module):
         # Simple error printing
         # Insert "sophisticated" stuff here
         #print(ec)
+        i_am_a_random_variable = "test"
 
     finally:
         return module
