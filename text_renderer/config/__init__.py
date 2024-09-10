@@ -229,7 +229,7 @@ def import_module_from_file(full_path_to_module):
     except Exception as ec:
         # Simple error printing
         # Insert "sophisticated" stuff here
-        print(ec)
+        #print(ec)
 
     finally:
         return module
