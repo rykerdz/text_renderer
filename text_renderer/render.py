@@ -84,7 +84,7 @@ class Render:
                 np_img = self.norm(np_img)
             return np_img, text
         except Exception as e:
-            logger.exception(e)
+            #logger.exception(e)
             raise e
 
     def gen_single_corpus(self) -> Tuple[PILImage, str, PILImage, PILImage]:
@@ -118,8 +118,8 @@ class Render:
                     transformed_text_pnts,
                 ) = transformer.do_warp_perspective(text_mask)
             except Exception as e:
-                logger.exception(e)
-                logger.error(font_text.font_path, "text", font_text.text)
+                #logger.exception(e)
+                #logger.error(font_text.font_path, "text", font_text.text)
                 raise e
         else:
             transformed_text_mask = text_mask
