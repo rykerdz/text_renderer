@@ -72,7 +72,8 @@ class FontManager:
                     for k, v in table.cmap.items():
                         chars_int.add(k)
             except AssertionError as e:
-                logger.error(f"Load font file {font_path} failed, skip it. Error: {e}")
+                # logger.error(f"Load font file {font_path} failed, skip it. Error: {e}")
+                pass
 
             supported_chars = set([chr(c_int) for c_int in chars_int])
 
